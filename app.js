@@ -13,7 +13,6 @@ function addTask() {
     li.appendChild(span);
 
     listContainer.appendChild(li);
-
     inputBox.value = "";
     saveData();
   }
@@ -34,15 +33,13 @@ function saveData() {
 }
 
 function showList() {
-  // Tu również dodajemy obsługę dla zdarzeń click dla elementów przywracanych z localStorage
   const data = localStorage.getItem("data");
   if (data) {
     listContainer.innerHTML = data;
-    // Dodajemy event listener dla przywróconych elementów
     Array.from(listContainer.getElementsByTagName("li")).forEach((li) => {
       li.addEventListener("click", function (e) {
         if (e.target.tagName === "LI") {
-          e.target.classList.toggle("checked");
+          li.classList.toggle("checked");
           saveData();
         } else if (e.target.tagName === "SPAN") {
           e.target.parentElement.remove();
