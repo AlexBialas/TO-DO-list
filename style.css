@@ -82,7 +82,7 @@ button {
 ul li {
   position: relative;
   padding: 10px 40px 10px 40px;
-  font-size: 16px;
+  font-size: 20px;
   user-select: none;
   cursor: pointer;
   margin-top: 15px;
@@ -94,10 +94,19 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url("todo.png");
+  background-image: url(/pngtree-circle-shadow-effect-png-image_5321427.png);
   background-size: cover;
   background-position: center;
   top: 50%;
-  left: 8px;
+  left: 5px;
   transform: translateY(-50%);
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(/pngimg.com\ -\ donut_PNG63.png);
 }
