@@ -29,6 +29,14 @@
 }
 
 .todo h2 {
-  color: blue;
-  display: inline;
+  color: #002765;
+  display: flex;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.todopic {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
