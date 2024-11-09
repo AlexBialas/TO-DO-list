@@ -4,7 +4,7 @@ const completionMessage = document.getElementById("completion-message");
 
 function addTask() {
   if (inputBox.value === "") {
-    alert("Musisz wpisać coś!");
+    alert("Write something here!");
   } else {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
