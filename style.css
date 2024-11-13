@@ -70,6 +70,16 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 20px;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+button:hover {
+  background: rgb(167, 107, 117);
 }
 
 #list-container {

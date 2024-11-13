@@ -43,6 +43,30 @@ function checkAllCompleted() {
   }
 }
 
+listContainer.addEventListener("dblclick", function (e) {
+  if (e.target.tagName === "LI") {
+    const editText = prompt(
+      "Edit your task:",
+      e.target.innerText.replace("\u00d7", "").trim()
+    );
+    if (editText !== null && editText !== "") {
+      e.target.innerHTML = editText;
+      let span = document.createElement("span");
+      span.innerHTML = "\u00d7";
+      e.target.appendChild(span);
+      saveData();
+    }
+  }
+});
+
+function clearAllTasks() {
+  if (confirm("Are you sure you want to delete all tasks?")) {
+    listContainer.innerHTML = "";
+    saveData();
+    completionMessage.style.display = "none";
+  }
+}
+
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
