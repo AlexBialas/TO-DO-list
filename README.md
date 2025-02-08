@@ -1,5 +1,10 @@
 # To-Do List App
 
+![Screenshot from 2025-02-08 09-51-02](https://github.com/user-attachments/assets/51c33a26-4797-49ed-8e58-29170ef48b8c)
+
+![Screenshot from 2025-02-08 09-51-12](https://github.com/user-attachments/assets/54359d71-6675-4922-bc19-906ddd9f4b70)
+
+
 ## Overview
 This To-Do List app is a simple yet powerful web application designed to help users manage their tasks effectively. Built with HTML, CSS, and JavaScript, the app allows users to add, remove, and check off tasks, while also keeping track of completed items through local storage.
 
